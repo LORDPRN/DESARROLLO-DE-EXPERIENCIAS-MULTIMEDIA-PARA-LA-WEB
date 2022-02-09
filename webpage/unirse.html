@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Únete a una legión!</title>
+</head>
+<body>
+
+
+    
+    <div class="box">
+        <form action="unirse.html" method="POST">
+
+            <h1>Únete a una legión</h1>
+            <input type="text" id="username" placeholder="username">
+
+            <input type="password" name="password" id="pass">
+    
+            <input type="number" name="phone" id="phone">
+
+            <input type="range" name="age" id="age" min="13" max="70" step="1">
+    
+            <h5>Elige tus hobbies</h5>
+            <label for="hobbies">Correr</label>
+            <input type="checkbox" name="correr" id="hobbies">
+            <label for="hobbies">Saltar</label>
+            <input type="checkbox" name="Saltar" id="hobbies">
+    
+            <h5>Dime tu genero</h5>
+            <label for="genre">Masculino</label>
+            <input type="radio" name="genre" id="genre">
+            <label for="genre">Femenino</label>
+            <input type="radio" name="genre" id="genre">
+    
+            <label for="Ciudad">¿Dónde vives?</label>
+            <select name="Ciudad" id="">
+                <option value=""></option>
+                <option value="Buenaventura">Buenaventura</option>
+                <option value="Cali">Cali</option>
+                <option value="Buga">Buga</option>
+                <option value="Tulúa">Tulúa</option>
+            </select>
+    
+            <label for="barrios">Barrio</label>
+            <input type="text" list="barrios">
+            <datalist id="barrios">
+                <option value="Bochalema"></option>
+                <option value="Dorado"></option>
+                <option value="La Flora"></option>
+                <option value="Laureles"></option>
+            </datalist>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>  
+
+    </div>
+
+    <style>
+    .box{
+    color: white;
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #6C3D1B;
+    text-align: center;
+}
+
+.box input[type = "text"],.box input[type="password"],.box input[type="number"],.box input[type="range"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid white;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.box input[type ="text"]:focus{
+    width: 280px;
+    border: 2px solid goldenrod;
+}
+
+.box input[type ="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid goldenrod;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type = submit]:hover{
+    background: goldenrod;
+}
+    </style>
+</body>
+</html>
