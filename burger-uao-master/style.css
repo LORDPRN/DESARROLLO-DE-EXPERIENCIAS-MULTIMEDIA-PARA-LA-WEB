@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Add a gray background color with some padding */
+  body {
+    font-family: Arial;
+    padding: 20px;
+    background: #eeeeee;
+  }
+  
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+  }
+  
+  .container-izq {   
+    float: left;
+    width: 75%;
+  }
+
+  .container-der {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+
+  .publicacion {
+     background-color: rgb(255, 255, 255);
+     padding: 20px;
+     margin-top: 20px;
+     z-index: 10;
+     border-radius: 20px;
+  }
+  
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .container-izq, .container-der {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+#contenedor-video video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    
+}
+
+.dark_bg{
+  background: rgba(0, 0, 0, 0.397);
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
