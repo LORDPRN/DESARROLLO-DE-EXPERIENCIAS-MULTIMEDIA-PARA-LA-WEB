@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    /*fondo gradiente*/
+    /*top to bottom default*/
+    /*background-image: linear-gradient(rgb(255, 0, 242), rgb(0, 26, 255));*/
+    /*background-image: linear-gradient(to right, red , yellow);*/
+    /*background-image: linear-gradient(to bottom right, rgb(255,0,242), rgb(0,26,255));*/
+    /*background-image: repeating-linear-gradient(rgb(255,0,242), rgb(0,26,255) 70%);*/
+
+    /*fondos imagen*/
+    /*background-image: url(src/rosalia.jpg);
+    background-size: cover;*/
+}
+
+.slider{
+    width: 960px;
+    height: 540px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 960px;
+    height: 540px;
+}
+
+/*css para los sliders*/
+
+.navigation-manual{
+    position: absolute;
+    width: 960px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid rgb(255, 0, 157);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0px;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -960px;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -1920px;
+    
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60px;
+}
+
